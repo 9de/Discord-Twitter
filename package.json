@@ -1,7 +1,44 @@
 {
+  "name": "nova-twitter-tracker",
+  "version": "1.0.0",
+  "description": "A sleek Discord bot for fetching and displaying Twitter user information with beautiful embeds and real-time stats",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9de/nova-twitter-tracker.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "twitter",
+    "tracker",
+    "social-media",
+    "discord.js"
+  ],
+  "author": "9de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/9de/nova-twitter-tracker/issues"
+  },
+  "homepage": "https://github.com/9de/nova-twitter-tracker#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "discord.js": "^13.6.0",
-    "request": "^2.88.2"
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=16.9.0"
   }
 }
