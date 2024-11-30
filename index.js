@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const { token, prefix } = require('./config.js');
+const { token, prefix } = require('./config.json');
 
 class TwitterInfoBot {
   constructor() {
@@ -161,13 +161,6 @@ class TwitterInfoBot {
   }
 }
 
-// Create config.js file
-const config = {
-  token: process.env.DISCORD_TOKEN || 'your-token-here',
-  prefix: '!'
-};
-
-module.exports = config;
 
 // Start the bot
 const bot = new TwitterInfoBot();
